@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Svg
    | SVG.NET API ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -90,14 +90,14 @@
       <h4><a class="xref" href="Svg.AttributeEventArgs.html">AttributeEventArgs</a></h4>
       <section><p>Describes the Attribute which was set</p>
 </section>
-      <h4><a class="xref" href="Svg.BaseConverter.html">BaseConverter</a></h4>
-      <section></section>
       <h4><a class="xref" href="Svg.ChildAddedEventArgs.html">ChildAddedEventArgs</a></h4>
       <section><p>Describes the Attribute which was set</p>
 </section>
       <h4><a class="xref" href="Svg.ContentEventArgs.html">ContentEventArgs</a></h4>
       <section><p>Content of this whas was set</p>
 </section>
+      <h4><a class="xref" href="Svg.CoordinateParser.html">CoordinateParser</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.EnumBaseConverter-1.html">EnumBaseConverter&lt;T&gt;</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.Enums.html">Enums</a></h4>
@@ -120,6 +120,8 @@
       <h4><a class="xref" href="Svg.StringArg.html">StringArg</a></h4>
       <section><p>Represents a string argument</p>
 </section>
+      <h4><a class="xref" href="Svg.SvgAnchor.html">SvgAnchor</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SVGArg.html">SVGArg</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgAspectRatio.html">SvgAspectRatio</a></h4>
@@ -131,7 +133,9 @@
       <h4><a class="xref" href="Svg.SvgAttributeCollection.html">SvgAttributeCollection</a></h4>
       <section><p>A collection of Scalable Vector Attributes that can be inherited from the owner elements ancestors.</p>
 </section>
-      <h4><a class="xref" href="Svg.SvgBoolConverter.html">SvgBoolConverter</a></h4>
+      <h4><a class="xref" href="Svg.SvgBlendModeConverter.html">SvgBlendModeConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Svg.SvgChannelSelectorConverter.html">SvgChannelSelectorConverter</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgCircle.html">SvgCircle</a></h4>
       <section><p>An SVG element to render circles to the document.</p>
@@ -146,7 +150,13 @@
 </section>
       <h4><a class="xref" href="Svg.SvgColourInterpolationConverter.html">SvgColourInterpolationConverter</a></h4>
       <section></section>
+      <h4><a class="xref" href="Svg.SvgColourMatrixTypeConverter.html">SvgColourMatrixTypeConverter</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SvgColourServer.html">SvgColourServer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Svg.SvgComponentTransferTypeConverter.html">SvgComponentTransferTypeConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Svg.SvgCompositeOperatorConverter.html">SvgCompositeOperatorConverter</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgContentNode.html">SvgContentNode</a></h4>
       <section></section>
@@ -155,12 +165,9 @@
       <h4><a class="xref" href="Svg.SvgCustomAttributeCollection.html">SvgCustomAttributeCollection</a></h4>
       <section><p>A collection of Custom Attributes</p>
 </section>
-      <h4><a class="xref" href="Svg.SvgDefaults.html">SvgDefaults</a></h4>
-      <section><p>Holds a dictionary of the default values of the SVG specification</p>
-</section>
       <h4><a class="xref" href="Svg.SvgDeferredPaintServer.html">SvgDeferredPaintServer</a></h4>
-      <section><p>A wrapper for a paint server which isn't defined currently in the parse process, but
-should be defined by the time the image needs to render.</p>
+      <section><p>A wrapper for a paint server which isn't defined currently in the parse process,
+but should be defined by the time the image needs to render.</p>
 </section>
       <h4><a class="xref" href="Svg.SvgDefinitionList.html">SvgDefinitionList</a></h4>
       <section><p>Represents a list of re-usable SVG components.</p>
@@ -173,6 +180,8 @@ should be defined by the time the image needs to render.</p>
       <h4><a class="xref" href="Svg.SvgDocumentMetadata.html">SvgDocumentMetadata</a></h4>
       <section><p>Represents a list of re-usable SVG components.</p>
 </section>
+      <h4><a class="xref" href="Svg.SvgEdgeModeConverter.html">SvgEdgeModeConverter</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SvgElement.html">SvgElement</a></h4>
       <section><p>The base class of which all SVG elements are derived from.</p>
 </section>
@@ -217,10 +226,12 @@ should be defined by the time the image needs to render.</p>
       <h4><a class="xref" href="Svg.SvgFontFaceUri.html">SvgFontFaceUri</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgFontManager.html">SvgFontManager</a></h4>
-      <section><p>Manages access to <span class="xref">Svg.SvgFontManager.SystemFonts</span> and any privately loaded fonts.
+      <section><p>Manages access to <see cref="!:SystemFonts"></see> and any privately loaded fonts.
 When a font is requested in the render process, if the font is not found as an embedded SvgFont, the render
 process will SvgFontManager.FindFont method.</p>
 </section>
+      <h4><a class="xref" href="Svg.SvgFontStretchConverter.html">SvgFontStretchConverter</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SvgFontStyleConverter.html">SvgFontStyleConverter</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgFontVariantConverter.html">SvgFontVariantConverter</a></h4>
@@ -276,9 +287,17 @@ process will SvgFontManager.FindFont method.</p>
       <h4><a class="xref" href="Svg.SvgMarkerUnitsConverter.html">SvgMarkerUnitsConverter</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgMask.html">SvgMask</a></h4>
-      <section></section>
+      <section><p>Defines an alpha mask for compositing the current object into the background.</p>
+</section>
       <h4><a class="xref" href="Svg.SvgMissingGlyph.html">SvgMissingGlyph</a></h4>
       <section></section>
+      <h4><a class="xref" href="Svg.SvgMorphologyOperatorConverter.html">SvgMorphologyOperatorConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Svg.SvgNamespace.html">SvgNamespace</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Svg.SvgNumberCollection.html">SvgNumberCollection</a></h4>
+      <section><p>Represents a list of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>.</p>
+</section>
       <h4><a class="xref" href="Svg.SvgOrient.html">SvgOrient</a></h4>
       <section><p>Represents an orientation in a Scalable Vector Graphics document.</p>
 </section>
@@ -321,6 +340,8 @@ Use the Script property to get the script content (proxies the content)</p>
 </section>
       <h4><a class="xref" href="Svg.SvgShapeRenderingConverter.html">SvgShapeRenderingConverter</a></h4>
       <section></section>
+      <h4><a class="xref" href="Svg.SvgStitchTypeConverter.html">SvgStitchTypeConverter</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SvgStrokeLineCapConverter.html">SvgStrokeLineCapConverter</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgStrokeLineJoinConverter.html">SvgStrokeLineJoinConverter</a></h4>
@@ -356,6 +377,8 @@ Use the Script property to get the script content (proxies the content)</p>
       <section></section>
       <h4><a class="xref" href="Svg.SvgTitle.html">SvgTitle</a></h4>
       <section></section>
+      <h4><a class="xref" href="Svg.SvgTurbulenceTypeConverter.html">SvgTurbulenceTypeConverter</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SvgUnitCollection.html">SvgUnitCollection</a></h4>
       <section><p>Represents a list of <a class="xref" href="Svg.SvgUnit.html">SvgUnit</a>.</p>
 </section>
@@ -370,8 +393,12 @@ Use the Script property to get the script content (proxies the content)</p>
       <h4><a class="xref" href="Svg.SvgVisualElement.html">SvgVisualElement</a></h4>
       <section><p>The class that all SVG elements should derive from when they are to be rendered.</p>
 </section>
+      <h4><a class="xref" href="Svg.XmlSpaceHandlingConverter.html">XmlSpaceHandlingConverter</a></h4>
+      <section></section>
     <h3 id="structs">Structs
   </h3>
+      <h4><a class="xref" href="Svg.CoordinateParserState.html">CoordinateParserState</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SvgLinearGradientServer.GradientPoints.html">SvgLinearGradientServer.GradientPoints</a></h4>
       <section></section>
       <h4><a class="xref" href="Svg.SvgPoint.html">SvgPoint</a></h4>
@@ -413,6 +440,8 @@ Use the Script property to get the script content (proxies the content)</p>
   </h3>
       <h4><a class="xref" href="Svg.EnumBaseConverter-1.CaseHandling.html">EnumBaseConverter&lt;T&gt;.CaseHandling</a></h4>
       <section></section>
+      <h4><a class="xref" href="Svg.NumState.html">NumState</a></h4>
+      <section></section>
       <h4><a class="xref" href="Svg.SvgClipRule.html">SvgClipRule</a></h4>
       <section><p>Indicates the algorithm which is to be used to determine the clipping region.</p>
 </section>
@@ -421,6 +450,9 @@ Use the Script property to get the script content (proxies the content)</p>
 </section>
       <h4><a class="xref" href="Svg.SvgFillRule.html">SvgFillRule</a></h4>
       <section></section>
+      <h4><a class="xref" href="Svg.SvgFontStretch.html">SvgFontStretch</a></h4>
+      <section><p>The desired amount of condensing or expansion in the glyphs used to render the text.</p>
+</section>
       <h4><a class="xref" href="Svg.SvgFontStyle.html">SvgFontStyle</a></h4>
       <section><p>This is the descriptor for the style of a font and takes the same values as the 'font-style' property, except that a comma-separated list is permitted.</p>
 </section>
@@ -489,7 +521,8 @@ Use the Script property to get the script content (proxies the content)</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

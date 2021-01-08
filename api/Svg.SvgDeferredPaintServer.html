@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SvgDeferredPaintServer
    | SVG.NET API ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -83,8 +83,8 @@
   
   <h1 id="Svg_SvgDeferredPaintServer" data-uid="Svg.SvgDeferredPaintServer" class="text-break">Class SvgDeferredPaintServer
   </h1>
-  <div class="markdown level0 summary"><p>A wrapper for a paint server which isn't defined currently in the parse process, but
-should be defined by the time the image needs to render.</p>
+  <div class="markdown level0 summary"><p>A wrapper for a paint server which isn't defined currently in the parse process,
+but should be defined by the time the image needs to render.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -109,6 +109,12 @@ should be defined by the time the image needs to render.</p>
       <a class="xref" href="Svg.SvgPaintServer.html#Svg_SvgPaintServer_None">SvgPaintServer.None</a>
     </div>
     <div>
+      <a class="xref" href="Svg.SvgPaintServer.html#Svg_SvgPaintServer_Inherit">SvgPaintServer.Inherit</a>
+    </div>
+    <div>
+      <a class="xref" href="Svg.SvgPaintServer.html#Svg_SvgPaintServer_NotSet">SvgPaintServer.NotSet</a>
+    </div>
+    <div>
       <a class="xref" href="Svg.SvgPaintServer.html#Svg_SvgPaintServer_Render_Svg_ISvgRenderer_">SvgPaintServer.Render(ISvgRenderer)</a>
     </div>
     <div>
@@ -122,6 +128,9 @@ should be defined by the time the image needs to render.</p>
     </div>
     <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_TryGetAttribute_System_String_System_String__">SvgElement.TryGetAttribute(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_ElementNamespace">SvgElement.ElementNamespace</a>
     </div>
     <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_ElementName">SvgElement.ElementName</a>
@@ -166,7 +175,7 @@ should be defined by the time the image needs to render.</p>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_Attributes">SvgElement.Attributes</a>
     </div>
     <div>
-      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_Inherited">SvgElement.Inherited</a>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_Writing">SvgElement.Writing</a>
     </div>
     <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_GetAttribute__1_System_String_System_Boolean___0_">SvgElement.GetAttribute&lt;TAttributeType&gt;(String, Boolean, TAttributeType)</a>
@@ -352,13 +361,22 @@ should be defined by the time the image needs to render.</p>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_StrokeOpacity">SvgElement.StrokeOpacity</a>
     </div>
     <div>
-      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_StopColor">SvgElement.StopColor</a>
-    </div>
-    <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_Opacity">SvgElement.Opacity</a>
     </div>
     <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_ShapeRendering">SvgElement.ShapeRendering</a>
+    </div>
+    <div>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_ColorInterpolation">SvgElement.ColorInterpolation</a>
+    </div>
+    <div>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_ColorInterpolationFilters">SvgElement.ColorInterpolationFilters</a>
+    </div>
+    <div>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_Visibility">SvgElement.Visibility</a>
+    </div>
+    <div>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_Display">SvgElement.Display</a>
     </div>
     <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_TextAnchor">SvgElement.TextAnchor</a>
@@ -385,16 +403,16 @@ should be defined by the time the image needs to render.</p>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_FontWeight">SvgElement.FontWeight</a>
     </div>
     <div>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_FontStretch">SvgElement.FontStretch</a>
+    </div>
+    <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_TextTransformation">SvgElement.TextTransformation</a>
     </div>
     <div>
       <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_Font">SvgElement.Font</a>
     </div>
     <div>
-      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_PrivateFonts">SvgElement.PrivateFonts</a>
-    </div>
-    <div>
-      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_ValidateFontFamily_System_String_Svg_SvgDocument_">SvgElement.ValidateFontFamily(String, SvgDocument)</a>
+      <a class="xref" href="Svg.SvgElement.html#Svg_SvgElement_ValidateFontFamily_System_String_Svg_SvgDocument_Svg_SvgFontManager_">SvgElement.ValidateFontFamily(String, SvgDocument, SvgFontManager)</a>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
@@ -435,7 +453,8 @@ should be defined by the time the image needs to render.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SvgDeferredPaintServer(SvgDocument document, string id)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Will be removed.&quot;)]
+public SvgDeferredPaintServer(SvgDocument document, string id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -456,6 +475,70 @@ should be defined by the time the image needs to render.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Svg_SvgDeferredPaintServer__ctor_" data-uid="Svg.SvgDeferredPaintServer.#ctor*"></a>
+  <h4 id="Svg_SvgDeferredPaintServer__ctor_System_String_" data-uid="Svg.SvgDeferredPaintServer.#ctor(System.String)">SvgDeferredPaintServer(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes new instance of <a class="xref" href="Svg.SvgDeferredPaintServer.html">SvgDeferredPaintServer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SvgDeferredPaintServer(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>&lt;FuncIRI&gt;, &lt;IRI&gt; or &quot;currentColor&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Svg_SvgDeferredPaintServer__ctor_" data-uid="Svg.SvgDeferredPaintServer.#ctor*"></a>
+  <h4 id="Svg_SvgDeferredPaintServer__ctor_System_String_Svg_SvgPaintServer_" data-uid="Svg.SvgDeferredPaintServer.#ctor(System.String,Svg.SvgPaintServer)">SvgDeferredPaintServer(String, SvgPaintServer)</h4>
+  <div class="markdown level1 summary"><p>Initializes new instance of <a class="xref" href="Svg.SvgDeferredPaintServer.html">SvgDeferredPaintServer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SvgDeferredPaintServer(string id, SvgPaintServer fallbackServer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>&lt;FuncIRI&gt;, &lt;IRI&gt; or &quot;currentColor&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Svg.SvgPaintServer.html">SvgPaintServer</a></td>
+        <td><span class="parametername">fallbackServer</span></td>
+        <td><p>&quot;none&quot;, &quot;currentColor&quot; or <a class="xref" href="Svg.SvgColourServer.html">SvgColourServer</a> server.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -494,7 +577,8 @@ should be defined by the time the image needs to render.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SvgDocument Document { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Will be removed.&quot;)]
+public SvgDocument Document { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -507,6 +591,31 @@ should be defined by the time the image needs to render.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Svg.SvgDocument.html">SvgDocument</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Svg_SvgDeferredPaintServer_FallbackServer_" data-uid="Svg.SvgDeferredPaintServer.FallbackServer*"></a>
+  <h4 id="Svg_SvgDeferredPaintServer_FallbackServer" data-uid="Svg.SvgDeferredPaintServer.FallbackServer">FallbackServer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SvgPaintServer FallbackServer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Svg.SvgPaintServer.html">SvgPaintServer</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -850,7 +959,8 @@ should be defined by the time the image needs to render.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

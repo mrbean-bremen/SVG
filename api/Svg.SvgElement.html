@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SvgElement
    | SVG.NET API ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -90,10 +90,15 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">SvgElement</span></div>
+      <div class="level2"><a class="xref" href="Svg.FilterEffects.SvgComponentTransferFunction.html">SvgComponentTransferFunction</a></div>
+      <div class="level2"><a class="xref" href="Svg.FilterEffects.SvgDistantLight.html">SvgDistantLight</a></div>
       <div class="level2"><a class="xref" href="Svg.FilterEffects.SvgFilter.html">SvgFilter</a></div>
       <div class="level2"><a class="xref" href="Svg.FilterEffects.SvgFilterPrimitive.html">SvgFilterPrimitive</a></div>
       <div class="level2"><a class="xref" href="Svg.FilterEffects.SvgMergeNode.html">SvgMergeNode</a></div>
+      <div class="level2"><a class="xref" href="Svg.FilterEffects.SvgPointLight.html">SvgPointLight</a></div>
+      <div class="level2"><a class="xref" href="Svg.FilterEffects.SvgSpotLight.html">SvgSpotLight</a></div>
       <div class="level2"><a class="xref" href="Svg.NonSvgElement.html">NonSvgElement</a></div>
+      <div class="level2"><a class="xref" href="Svg.SvgAnchor.html">SvgAnchor</a></div>
       <div class="level2"><a class="xref" href="Svg.SvgClipPath.html">SvgClipPath</a></div>
       <div class="level2"><a class="xref" href="Svg.SvgDefinitionList.html">SvgDefinitionList</a></div>
       <div class="level2"><a class="xref" href="Svg.SvgDescription.html">SvgDescription</a></div>
@@ -183,30 +188,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Svg_SvgElement_PrivateFonts" data-uid="Svg.SvgElement.PrivateFonts">PrivateFonts</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Drawing.Text.PrivateFontCollection PrivateFonts</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.text.privatefontcollection">Drawing.Text.PrivateFontCollection</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -319,6 +300,59 @@
   </table>
   
   
+  <a id="Svg_SvgElement_ColorInterpolation_" data-uid="Svg.SvgElement.ColorInterpolation*"></a>
+  <h4 id="Svg_SvgElement_ColorInterpolation" data-uid="Svg.SvgElement.ColorInterpolation">ColorInterpolation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the color space for gradient interpolations, color animations and alpha compositing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SvgColourInterpolation ColorInterpolation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SvgColourInterpolation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Svg_SvgElement_ColorInterpolationFilters_" data-uid="Svg.SvgElement.ColorInterpolationFilters*"></a>
+  <h4 id="Svg_SvgElement_ColorInterpolationFilters" data-uid="Svg.SvgElement.ColorInterpolationFilters">ColorInterpolationFilters</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the color space for imaging operations performed via filter effects.
+NOT currently mapped through to bitmap</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SvgColourInterpolation ColorInterpolationFilters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SvgColourInterpolation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Svg_SvgElement_Content_" data-uid="Svg.SvgElement.Content*"></a>
   <h4 id="Svg_SvgElement_Content" data-uid="Svg.SvgElement.Content">Content</h4>
   <div class="markdown level1 summary"></div>
@@ -370,6 +404,33 @@
   </table>
   
   
+  <a id="Svg_SvgElement_Display_" data-uid="Svg.SvgElement.Display*"></a>
+  <h4 id="Svg_SvgElement_Display" data-uid="Svg.SvgElement.Display">Display</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value to determine whether the element will be rendered.
+Needed to support SVG attribute display=&quot;none&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Display { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Svg_SvgElement_ElementName_" data-uid="Svg.SvgElement.ElementName*"></a>
   <h4 id="Svg_SvgElement_ElementName" data-uid="Svg.SvgElement.ElementName">ElementName</h4>
   <div class="markdown level1 summary"><p>Gets the name of the element.</p>
@@ -378,6 +439,32 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected string ElementName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Svg_SvgElement_ElementNamespace_" data-uid="Svg.SvgElement.ElementNamespace*"></a>
+  <h4 id="Svg_SvgElement_ElementNamespace" data-uid="Svg.SvgElement.ElementNamespace">ElementNamespace</h4>
+  <div class="markdown level1 summary"><p>Gets the elements namespace as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string ElementNamespace { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -577,6 +664,32 @@
   </table>
   
   
+  <a id="Svg_SvgElement_FontStretch_" data-uid="Svg.SvgElement.FontStretch*"></a>
+  <h4 id="Svg_SvgElement_FontStretch" data-uid="Svg.SvgElement.FontStretch">FontStretch</h4>
+  <div class="markdown level1 summary"><p>Indicates the desired amount of condensing or expansion in the glyphs used to render the text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SvgFontStretch FontStretch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Svg.SvgFontStretch.html">SvgFontStretch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Svg_SvgElement_FontStyle_" data-uid="Svg.SvgElement.FontStyle*"></a>
   <h4 id="Svg_SvgElement_FontStyle" data-uid="Svg.SvgElement.FontStyle">FontStyle</h4>
   <div class="markdown level1 summary"><p>Refers to the style of the font.</p>
@@ -692,31 +805,6 @@
         <td><a class="xref" href="Svg.SvgException.html">SvgException</a></td>
         <td><p>The ID is already used within the <a class="xref" href="Svg.SvgDocument.html">SvgDocument</a>.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Svg_SvgElement_Inherited_" data-uid="Svg.SvgElement.Inherited*"></a>
-  <h4 id="Svg_SvgElement_Inherited" data-uid="Svg.SvgElement.Inherited">Inherited</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool Inherited { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -955,35 +1043,6 @@ public virtual XmlSpaceHandling SpaceHandling { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Svg_SvgElement_StopColor_" data-uid="Svg.SvgElement.StopColor*"></a>
-  <h4 id="Svg_SvgElement_StopColor" data-uid="Svg.SvgElement.StopColor">StopColor</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the colour of the gradient stop.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual SvgPaintServer StopColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Svg.SvgPaintServer.html">SvgPaintServer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Svg_SvgElement_StopColor_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Apparently this can be set on non-sensical elements.  Don't ask; just check the tests.</p>
-</div>
   
   
   <a id="Svg_SvgElement_Stroke_" data-uid="Svg.SvgElement.Stroke*"></a>
@@ -1289,6 +1348,57 @@ public virtual XmlSpaceHandling SpaceHandling { get; set; }</code></pre>
         <td><span class="xref">SvgTransformCollection</span></td>
         <td><p>The transforms.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Svg_SvgElement_Visibility_" data-uid="Svg.SvgElement.Visibility*"></a>
+  <h4 id="Svg_SvgElement_Visibility" data-uid="Svg.SvgElement.Visibility">Visibility</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value to determine whether the element will be rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Visibility { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Svg_SvgElement_Writing_" data-uid="Svg.SvgElement.Writing*"></a>
+  <h4 id="Svg_SvgElement_Writing" data-uid="Svg.SvgElement.Writing">Writing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool Writing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1643,7 +1753,7 @@ public virtual XmlSpaceHandling SpaceHandling { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TAttributeType GetAttribute&lt;TAttributeType&gt;(string attributeName, bool inherit, TAttributeType defaultValue = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected TAttributeType GetAttribute&lt;TAttributeType&gt;(string attributeName, bool inherited, TAttributeType defaultValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1662,7 +1772,7 @@ public virtual XmlSpaceHandling SpaceHandling { get; set; }</code></pre>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">inherit</span></td>
+        <td><span class="parametername">inherited</span></td>
         <td></td>
       </tr>
       <tr>
@@ -2493,12 +2603,12 @@ Can be applied to bounds calculated without considering the element transformati
   
   
   <a id="Svg_SvgElement_ValidateFontFamily_" data-uid="Svg.SvgElement.ValidateFontFamily*"></a>
-  <h4 id="Svg_SvgElement_ValidateFontFamily_System_String_Svg_SvgDocument_" data-uid="Svg.SvgElement.ValidateFontFamily(System.String,Svg.SvgDocument)">ValidateFontFamily(String, SvgDocument)</h4>
+  <h4 id="Svg_SvgElement_ValidateFontFamily_System_String_Svg_SvgDocument_Svg_SvgFontManager_" data-uid="Svg.SvgElement.ValidateFontFamily(System.String,Svg.SvgDocument,Svg.SvgFontManager)">ValidateFontFamily(String, SvgDocument, SvgFontManager)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object ValidateFontFamily(string fontFamilyList, SvgDocument doc)</code></pre>
+    <pre><code class="lang-csharp hljs">public static object ValidateFontFamily(string fontFamilyList, SvgDocument doc, SvgFontManager fontManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2518,6 +2628,11 @@ Can be applied to bounds calculated without considering the element transformati
       <tr>
         <td><a class="xref" href="Svg.SvgDocument.html">SvgDocument</a></td>
         <td><span class="parametername">doc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Svg.SvgFontManager.html">SvgFontManager</a></td>
+        <td><span class="parametername">fontManager</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3047,7 +3162,8 @@ Can be applied to bounds calculated without considering the element transformati
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
